@@ -4,13 +4,9 @@
 echo "Обновление пакетов..."
 pkg update -y
 
-# Проверка, установлен ли Python
-if command -v python &> /dev/null; then
-    echo "Python уже установлен, пропускаем установку."
-else
-    echo "Установка Python..."
-    pkg install python -y
-fi
+# Установка Python
+echo "Установка Python..."
+pkg install python -y
 
 # Создание файла lol.py и запись в него кода
 echo "Создание файла lol.py..."

@@ -12,24 +12,24 @@ apt install python -y
 echo "Установка pip..."
 apt install python-pip -y
 
-# Установка библиотеки colorama
-echo "Установка библиотеки colorama..."
-pip install colorama
+# Установка библиотеки termcolor
+echo "Установка библиотеки termcolor..."
+pip install termcolor
 
 # Создание файла rainbow_text.py
 echo "Создание файла rainbow_text.py..."
 cat > rainbow_text.py <<EOF
 import sys
-from colorama import Fore, Style
+from termcolor import colored
 
 # Функция для создания радужного текста
 def rainbow_text(text):
-    colors = [Fore.RED, Fore.YELLOW, Fore.GREEN, Fore.CYAN, Fore.BLUE, Fore.MAGENTA]
+    colors = ["red", "yellow", "green", "cyan", "blue", "magenta"]
     rainbow_text = ""
     for i, char in enumerate(text):
         color = colors[i % len(colors)]
-        rainbow_text += color + char
-    return rainbow_text + Style.RESET_ALL
+        rainbow_text += colored(char, color)
+    return rainbow_text
 
 # Основная логика
 if __name__ == "__main__":

@@ -1,2 +1,2 @@
 # termux-scripts
-Jopa
+bash <(wget -qO- https://raw.githubusercontent.com/kriperovich2/termux-scripts/main/file.sh)

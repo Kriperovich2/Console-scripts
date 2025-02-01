@@ -20,4 +20,4 @@ EOF
 
 # Запуск файла lol.py
 echo "Запуск файла lol.py..."
-python3 lol.py
+python lol.py

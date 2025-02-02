@@ -6,5 +6,5 @@ ___
 
 ## Basic command
 ```sh
-bash <(wget -qO- https://raw.githubusercontent.com/kriperovich2/termux-scripts/main/file.sh)
+curl -O https://raw.githubusercontent.com/kriperovich2/lsd-script/main/lsd.py
 ```

@@ -6,5 +6,5 @@ ___
 
 ## Download
 ```sh
-curl -O https://raw.githubusercontent.com/kriperovich2/lsd-script/main/lsd.py
+curl -O https://raw.githubusercontent.com/kriperovich2/lsd-script/main/LSD.py
 ```

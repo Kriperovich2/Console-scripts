@@ -6,10 +6,10 @@ from colorama import Fore, Style, init
 init()
 
 # URL репозитория
-repo_url = "https://api.https://github.com/Kriperovich2/LSD-SCRIPT-DB/contents"
+repo_url = "https://api.github.com/repos/Kriperovich2/LSD-SCRIPT-DB/contents"
 
 # Путь к папке lsd (если папка существует, файлы будут сохраняться туда)
-download_folder = "/lsd"
+download_folder = "lsd"
 
 def print_menu():
     os.system('cls' if os.name == 'nt' else 'clear')

@@ -6,7 +6,7 @@ from colorama import Fore, Style, init
 init()
 
 # URL репозитория
-repo_url = "https://api.github.com/repos/kriperovich2/console-scripts/contents"
+repo_url = "https://api.https://github.com/Kriperovich2/LSD-SCRIPT-DB/contents"
 
 # Путь к папке lsd (если папка существует, файлы будут сохраняться туда)
 download_folder = "/lsd"

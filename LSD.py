@@ -27,20 +27,21 @@ def print_menu():
      '\;::_;:-·'´‘      \::::\:;:·´                 `\;::-·´            
        '¨                 '`*'´‘                                         
     """ + Style.RESET_ALL)
-    print(Fore.RED + "=============================================" + Style.RESET_ALL)
-    print(Fore.RED + "|          Install Best Hacking Tool          |" + Style.RESET_ALL)
-    print(Fore.RED + "=============================================" + Style.RESET_ALL)
-    print("\n  [ 1 ] Show all tools.")
+    print(Fore.RED + "           =============================================" + Style.RESET_ALL)
+    print(Fore.RED + "           |          Install Best Hacking Tool          |" + Style.RESET_ALL)
+    print(Fore.RED + "           =============================================" + Style.RESET_ALL)
+    print("\n  [ 1 ] Show all files.")
     print("  [ x ] For Exit.")
     print(Fore.RED + "_______________________________________________" + Style.RESET_ALL)
     print(Fore.RED + "==============================================" + Style.RESET_ALL)
 
-def fetch_sh_files():
+def fetch_files():
     response = requests.get(repo_url)
     if response.status_code == 200:
         files = response.json()
-        sh_files = [file for file in files if file['name'].endswith('.sh')]
-        return sh_files
+        # Фильтруем только файлы (исключаем папки)
+        files_only = [file for file in files if file['type'] == 'file']
+        return files_only
     else:
         print("Failed to fetch files from GitHub.")
         return []
@@ -67,12 +68,12 @@ def main():
         print_menu()
         choice = input("Enter your choice: ")
         if choice == '1':
-            sh_files = fetch_sh_files()
-            for i, file in enumerate(sh_files):
+            files = fetch_files()
+            for i, file in enumerate(files):
                 print(f"[ {i+1} ] {file['name']}")
             file_choice = input("Select a file to download (or 'x' to return): ")
-            if file_choice.isdigit() and 0 < int(file_choice) <= len(sh_files):
-                selected_file = sh_files[int(file_choice)-1]
+            if file_choice.isdigit() and 0 < int(file_choice) <= len(files):
+                selected_file = files[int(file_choice)-1]
                 download_file(selected_file['download_url'], selected_file['name'])
             elif file_choice.lower() == 'x':
                 continue

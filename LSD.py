@@ -28,7 +28,7 @@ def print_menu():
        '¨                 '`*'´‘                                         
     """ + Style.RESET_ALL)
     print(Fore.RED + "           =============================================" + Style.RESET_ALL)
-    print(Fore.RED + "           |          Install Best Hacking Tool          |" + Style.RESET_ALL)
+    print(Fore.RED + "           |         Install Best Hacking Tool         |" + Style.RESET_ALL)
     print(Fore.RED + "           =============================================" + Style.RESET_ALL)
     print("\n  [ 1 ] Show all files.")
     print("  [ x ] For Exit.")

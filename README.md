@@ -7,7 +7,7 @@ ___
 # About
 Using the script you can download a bunch of useful software
 
-![lool](https://raw.githubusercontent.com/Kriperovich2/lsd-script/refs/heads/main/IMG_20250212_085442_445.jpg)
+![lool](https://raw.githubusercontent.com/Kriperovich2/lsd-script/refs/heads/main/prewiew.jpg)
 ___
 ## Download
 ```sh

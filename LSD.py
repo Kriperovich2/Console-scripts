@@ -37,8 +37,8 @@ def search_in_file(filename, search_term):
 def display_author_info():
     author_info = """
     ====================================
-    |            Author                |
-    |         Kriperovich2             |
+    |             Author               |
+    |          Kriperovich2            |
     ====================================
     """
     colored_author_info = Colorate.Vertical(Colors.yellow_to_red, Center.XCenter(author_info))

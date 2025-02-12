@@ -7,11 +7,20 @@ ___
 # About
 Using the script you can download a bunch of useful software
 
-![lool](https://raw.githubusercontent.com/Kriperovich2/lsd-script/refs/heads/main/prewiew.jpg)
+PyStyle prewiew
+![pystyle](https://raw.githubusercontent.com/Kriperovich2/lsd-script/refs/heads/main/prewiew.jpg)
+Colorama prewiew
+![cprewiew](https://github.com/user-attachments/assets/d790fe30-540e-4393-bb2c-1230f62a7166)
+
 ___
 ## Download
+PyStyle version
 ```sh
 curl -O https://raw.githubusercontent.com/kriperovich2/lsd-script/main/LSD.py
+```
+Colorama version
+```sh
+curl -O https://raw.githubusercontent.com/kriperovich2/lsd-script/main/LSDc.py
 ```
 
 for convenience, create a folder in which all files will be downloaded
